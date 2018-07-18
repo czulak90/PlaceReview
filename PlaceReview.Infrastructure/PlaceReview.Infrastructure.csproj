@@ -5,16 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="DTO\" />
     <Folder Include="EF\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Commands\" />
-    <Folder Include="Mappers\" />
     <Folder Include="IoC\" />
     <Folder Include="Handlers\" />
     <Folder Include="Settings\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlaceReview.Core\PlaceReview.Core.csproj" />
   </ItemGroup>
 
 </Project>

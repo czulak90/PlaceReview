@@ -10,6 +10,12 @@ namespace PlaceReview.Core.Domain
         public Guid Id { get; protected set; }
         public string Name { get; protected set; }
         public string Descritpion { get; protected set; }
+        private ICollection<Review> _reviews = new List<Review>();
+        public IEnumerable<Review> Reviews
+        {
+            get { return _reviews; }
+            set { _reviews = new List<Review>(value); }
+        }
         private ISet<Category> _categories = new HashSet<Category>();
         public IEnumerable<Category> Categories
         {
@@ -22,6 +28,8 @@ namespace PlaceReview.Core.Domain
         public DateTime CreatedAt { get; protected set; }
         public DateTime UpdatedAt { get; protected set; }
         public IEnumerable<Rating> Ratings { get; protected set; }
+        public User CreatedBy { get; protected set; }
+        public User Owner { get; protected set; }
 
         public double AvarageRate
         {
@@ -30,6 +38,14 @@ namespace PlaceReview.Core.Domain
                 if (Ratings.Any())
                     return Math.Round(Ratings.Average(x => x.Value), 1);
                 return 0;
+            }
+        }
+
+        public double NumberOfReviews
+        {
+            get
+            {
+                return Reviews.Count();
             }
         }
 

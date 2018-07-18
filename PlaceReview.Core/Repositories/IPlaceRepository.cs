@@ -8,8 +8,8 @@ namespace PlaceReview.Core.Repositories
     public interface IPlaceRepository : IRepository
     {
         Task<Place> GetAsync(Guid id);
-        Task<IEnumerable<Place>> GetAsync(User user);
-        Task<IEnumerable<Place>> GetByCountryAsync(string country );
+        Task<IEnumerable<Place>> GetByCreatorAsync(Guid userId);
+        Task<IEnumerable<Place>> GetByCountryAsync(string country);
         Task<IEnumerable<Place>> GetByCityAsync(string city);
         Task<IEnumerable<Place>> GetAllAsync();
         Task AddAsync(Place place);

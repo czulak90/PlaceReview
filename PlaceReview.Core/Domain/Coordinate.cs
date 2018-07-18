@@ -6,8 +6,7 @@ namespace PlaceReview.Core.Domain
 {
     public class Coordinate
     {
-        public double Latitude { get; private set; }
-        public double Longitude { get; private set; }
+        public double Latitude { get; protected set; }
 
         protected Coordinate()
         {
@@ -23,11 +22,11 @@ namespace PlaceReview.Core.Domain
         {
             if (double.IsNaN(latitude))
             {
-                throw new Exception("Latitude must be number.");
+                throw new Exception("Latitude must be a number.");
             }
             if (latitude > 90 || latitude < -90)
             {
-                throw new Exception("Latitude must be greater equal than -90 and less equal than 90.");
+                throw new Exception("Latitude must be greater or equal than -90 and less or equal than 90.");
             }
             Latitude = latitude;
         }
@@ -40,7 +39,7 @@ namespace PlaceReview.Core.Domain
             }
             if (longitude > 180 || longitude < -180)
             {
-                throw new Exception("Longitude must be greater equal than -180 and less equal than 180.");
+                throw new Exception("Longitude must be greater or equal than -180 and less or equal than 180.");
             }
             Longitude = longitude;
         }

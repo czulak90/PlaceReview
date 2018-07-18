@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceReview.Core", "PlaceRe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceReview.Infrastructure", "PlaceReview.Infrastructure\PlaceReview.Infrastructure.csproj", "{F3258499-2AAF-49ED-A144-F2A87CDF90BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceReview.Tests", "PlaceReview.Tests\PlaceReview.Tests.csproj", "{D611168F-61DB-47C4-9D61-660A7AEB7D9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceReview.Tests", "PlaceReview.Tests\PlaceReview.Tests.csproj", "{D611168F-61DB-47C4-9D61-660A7AEB7D9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceReview.Api", "PlaceReview.Api\PlaceReview.Api.csproj", "{C1341B06-F304-4632-AFC4-6778536ED5DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D611168F-61DB-47C4-9D61-660A7AEB7D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D611168F-61DB-47C4-9D61-660A7AEB7D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D611168F-61DB-47C4-9D61-660A7AEB7D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1341B06-F304-4632-AFC4-6778536ED5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1341B06-F304-4632-AFC4-6778536ED5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1341B06-F304-4632-AFC4-6778536ED5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1341B06-F304-4632-AFC4-6778536ED5DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{5E90E840-1320-4391-9741-22FC27CA173E} = {5DBFAD1A-B213-4A09-B64F-1E1B2A97F14C}
 		{F3258499-2AAF-49ED-A144-F2A87CDF90BE} = {5DBFAD1A-B213-4A09-B64F-1E1B2A97F14C}
 		{D611168F-61DB-47C4-9D61-660A7AEB7D9D} = {D2843CC2-7380-451E-85E4-3E082A92E873}
+		{C1341B06-F304-4632-AFC4-6778536ED5DE} = {5DBFAD1A-B213-4A09-B64F-1E1B2A97F14C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C10D3795-A019-4C4C-98E2-4662562D520F}
