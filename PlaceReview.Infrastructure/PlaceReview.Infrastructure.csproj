@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="DTO\" />
+    <Folder Include="EF\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="IoC\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
