@@ -1,10 +1,19 @@
-﻿using System;
+﻿using PlaceReview.Core.Domain;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace PlaceReview.Core.Repositories
 {
-    class IPlaceRepository
+    public interface IPlaceRepository : IRepository
     {
+        Task<Place> GetAsync(Guid id);
+        Task<IEnumerable<Place>> GetAsync(User user);
+        Task<IEnumerable<Place>> GetByCountryAsync(string country );
+        Task<IEnumerable<Place>> GetByCityAsync(string city);
+        Task<IEnumerable<Place>> GetAllAsync();
+        Task AddAsync(Place place);
+        Task RemoveAsync(Guid id);
+        Task UpdateAsync(Place place);
     }
 }
