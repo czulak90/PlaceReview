@@ -5,7 +5,7 @@ using System.Text;
 namespace PlaceReview.Infrastructure.Services
 {
     //marker interface
-    public interface Service
+    public interface IService
     {
     }
 }
